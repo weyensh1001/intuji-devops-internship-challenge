@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./php-hello-world:/usr/share/nginx/html
+    networks:
+      - php-hello-world-network
+
+networks:
+  php-hello-world-network:
+    driver: bridge
