@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # php-hello-world
 A simple hello-world for composer
 
@@ -33,3 +34,6 @@ use Silarhi\Hello;
 $hello = new Hello();
 echo $hello->display() . "\n";
 ```
+=======
+# intuji-devops-internship-challenge
+>>>>>>> origin/main
